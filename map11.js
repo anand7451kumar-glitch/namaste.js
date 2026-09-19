@@ -5,7 +5,9 @@ const users = [
     {firstName: "ELON", lastName: "MUSK", age: 22},
 ];
 
-const output = users.filter(x => x.age<30).map((x) => x.firstName);
+const output = users
+.filter(x => x.age<30)
+.map((x) => x.firstName);
 
 console.log(output);
 
