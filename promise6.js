@@ -21,4 +21,5 @@ Promise.any([p1, p2, p3])
  })
  .catch((err) => {
     console.error(err);
+    console.log(err.errors);
  });
