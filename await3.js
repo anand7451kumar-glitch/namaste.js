@@ -9,6 +9,7 @@ const p = new Promise((resolve, reject) => {
 
 
 function getData() {
+    //JS wont wait for promise to be resolved
     p.then(res => console.log(res));
     console.log("Namaste JAVA")
 }
