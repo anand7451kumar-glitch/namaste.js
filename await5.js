@@ -29,3 +29,10 @@ async function handlePromise() {
     console.log(val2);
 }
 handlePromise();
+
+
+
+//handlePromise()
+//call stack
+
+// Async - p1, p2
