@@ -16,12 +16,7 @@ async function handlePromise() {
     }
 
     //fetch().then(res=> res.json()).then(res=> console.log())
-
-
-
-    //fetch()=> Response.json() => result json value
-
-
+   //fetch()=> Response.json() => result json value
 }
 handlePromise();
 
