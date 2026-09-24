@@ -12,7 +12,6 @@ function x () {
 
 
 // this in strict mode - ( this substitution)
-
 // if the value of this keyword is undefined or null
 // this keyword will be replaced with globalObject 
 //{only in strict mode}
@@ -24,32 +23,34 @@ window.x(); // window
 
 // this inside a object's method
 
-const student = {
-    name: "AKSHAY",
-    printName: function () {
-        console.log(this.name);
-    },
-};
-
-student.printName();
-
-const student2 = {
-    name: "DEEPAK",
-};
-
-// call apply bind methods (sharing methods)
-
-student.printName.call(student2);  // value of this = student2
-
-// this inside arrow function
-
 const obj = {
-    a: 10,
-    x: ()  => {
+    a:10,
+    x: () => {
         console.log(this);
     },
 };
-obj.x();
+obj.x()
+
+// this inside nested arrow function
+
+const obj2 = {
+    a:20,
+    x: function () {
+        // enclosing lexical context
+       const y = () => {
+            console.log(this);
+        }
+        y()
+        
+    },
+};
+obj2.x();
+
+// this inside DOM elements => reference to HTMLelement
+
+
+
+
 
 
 
